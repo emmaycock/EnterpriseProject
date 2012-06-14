@@ -1,0 +1,8 @@
+H:\HotelDir\HotelDir.Tests\bin\Debug\HotelDir.Tests.dll.config
+H:\HotelDir\HotelDir.Tests\bin\Debug\HotelDir.Tests.dll
+H:\HotelDir\HotelDir.Tests\bin\Debug\HotelDir.Tests.pdb
+H:\HotelDir\HotelDir.Tests\bin\Debug\HotelDir.dll
+H:\HotelDir\HotelDir.Tests\bin\Debug\HotelDir.pdb
+H:\HotelDir\HotelDir.Tests\obj\Debug\ResolveAssemblyReference.cache
+H:\HotelDir\HotelDir.Tests\obj\Debug\HotelDir.Tests.dll
+H:\HotelDir\HotelDir.Tests\obj\Debug\HotelDir.Tests.pdb

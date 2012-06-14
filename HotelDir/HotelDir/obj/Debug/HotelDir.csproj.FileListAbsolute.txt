@@ -1,0 +1,5 @@
+H:\HotelDir\HotelDir\bin\HotelDir.dll
+H:\HotelDir\HotelDir\bin\HotelDir.pdb
+H:\HotelDir\HotelDir\obj\Debug\ResolveAssemblyReference.cache
+H:\HotelDir\HotelDir\obj\Debug\HotelDir.dll
+H:\HotelDir\HotelDir\obj\Debug\HotelDir.pdb
