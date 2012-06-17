@@ -7,12 +7,12 @@ using System.Data.Linq.Mapping;
 namespace ModelHotel
 {
     [Table(Name = "Admin")]
-    class Admin
+    public class Admin
     {
         [Column(IsPrimaryKey = true, Storage = "_adminID")]
         public int adminID;
-        
-        String username;
-        int passcode;
+
+        public String username { get; set; }
+        public int passcode { get; set; }
     }
 }

@@ -7,15 +7,15 @@ using System.Data.Linq.Mapping;
 namespace ModelHotel
 {
    [Table(Name = "Room")]
-   class Room
+   public class Room
     {
        [Column(IsPrimaryKey = true, Storage = "_roomnumberID")]
        public int roomnumberID;
-       
-       int hotelid;
-       int doornumber;
-       int price;
-       String type;
+
+       public int hotelid { get; set; }
+       public int doornumber { get; set; }
+       public int price { get; set; }
+       public String type { get; set; }
        
     }
 }

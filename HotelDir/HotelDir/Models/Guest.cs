@@ -7,15 +7,15 @@ using System.Data.Linq.Mapping;
 namespace ModelHotel
 {
     [Table(Name = "Guest")]
-    class Guest
+    public class Guest
     {
-        String LastName;
-        String FirstName;
-        String Street;
-        String City;
-        String State;
-        int Zip;
-        String username;
-        int reservationnumber;
+        public String LastName { get; set; }
+        public String FirstName { get; set; }
+        public String Street { get; set; }
+        public String City { get; set; }
+        public String State { get; set; }
+        public int Zip { get; set; }
+        public String username { get; set; }
+        public int reservationnumber { get; set; }
     }
 }

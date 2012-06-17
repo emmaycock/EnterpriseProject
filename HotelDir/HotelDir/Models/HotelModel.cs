@@ -8,18 +8,18 @@ using System.Data.Linq.Mapping;
 namespace ModelHotel
 {
     [Table (Name = "Hotel")]
-    class HotelModel
+    public class HotelModel
     {
     [Column (IsPrimaryKey = true, Storage = "_hotelID")]
         public int hotelid;
-       
-        String HotelName;
-        String Street;
-        String City;
-        String State;
-        int Zip;
-        int Phone;
-         }
+
+    public String HotelName { get; set; }
+    public String Street { get; set; }
+    public String City { get; set; }
+    public String State { get; set; }
+    public int Zip { get; set; }
+    public int Phone { get; set; }
+        }
 }
 
 
