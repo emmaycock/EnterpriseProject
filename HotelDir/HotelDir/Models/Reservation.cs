@@ -10,7 +10,7 @@ namespace ModelHotel
     public class Reservation
     {
         [Column(IsPrimaryKey = true, Storage = "_reservationnumberID")]
-        public int reservationnumberID;
+        public int reservationnumberID { get; set; }
 
         public int hotelid { get; set; }
         public int roomnumberID { get; set; }

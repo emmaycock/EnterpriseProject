@@ -10,7 +10,7 @@ namespace ModelHotel
     public class Admin
     {
         [Column(IsPrimaryKey = true, Storage = "_adminID")]
-        public int adminID;
+        public int adminID { get; set; }
 
         public String username { get; set; }
         public int passcode { get; set; }

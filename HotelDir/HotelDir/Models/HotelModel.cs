@@ -11,7 +11,7 @@ namespace ModelHotel
     public class HotelModel
     {
     [Column (IsPrimaryKey = true, Storage = "_hotelID")]
-        public int hotelid;
+        public int hotelid { get; set; }
 
     public String HotelName { get; set; }
     public String Street { get; set; }
