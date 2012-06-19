@@ -1,0 +1,5 @@
+C:\Users\-\Documents\Visual Studio 2010\Projects\ModelHotel\ModelHotel\bin\ModelHotel.dll
+C:\Users\-\Documents\Visual Studio 2010\Projects\ModelHotel\ModelHotel\bin\ModelHotel.pdb
+C:\Users\-\Documents\Visual Studio 2010\Projects\ModelHotel\ModelHotel\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\-\Documents\Visual Studio 2010\Projects\ModelHotel\ModelHotel\obj\Debug\ModelHotel.dll
+C:\Users\-\Documents\Visual Studio 2010\Projects\ModelHotel\ModelHotel\obj\Debug\ModelHotel.pdb

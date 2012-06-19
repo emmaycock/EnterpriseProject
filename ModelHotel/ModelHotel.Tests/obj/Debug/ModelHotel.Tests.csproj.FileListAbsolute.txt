@@ -1,0 +1,8 @@
+C:\Users\-\Documents\Visual Studio 2010\Projects\ModelHotel\ModelHotel.Tests\bin\Debug\ModelHotel.Tests.dll.config
+C:\Users\-\Documents\Visual Studio 2010\Projects\ModelHotel\ModelHotel.Tests\bin\Debug\ModelHotel.Tests.dll
+C:\Users\-\Documents\Visual Studio 2010\Projects\ModelHotel\ModelHotel.Tests\bin\Debug\ModelHotel.Tests.pdb
+C:\Users\-\Documents\Visual Studio 2010\Projects\ModelHotel\ModelHotel.Tests\bin\Debug\ModelHotel.dll
+C:\Users\-\Documents\Visual Studio 2010\Projects\ModelHotel\ModelHotel.Tests\bin\Debug\ModelHotel.pdb
+C:\Users\-\Documents\Visual Studio 2010\Projects\ModelHotel\ModelHotel.Tests\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\-\Documents\Visual Studio 2010\Projects\ModelHotel\ModelHotel.Tests\obj\Debug\ModelHotel.Tests.dll
+C:\Users\-\Documents\Visual Studio 2010\Projects\ModelHotel\ModelHotel.Tests\obj\Debug\ModelHotel.Tests.pdb
