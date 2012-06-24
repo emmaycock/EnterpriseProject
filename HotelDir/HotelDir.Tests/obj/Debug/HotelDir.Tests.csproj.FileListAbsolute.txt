@@ -6,3 +6,11 @@ H:\HotelDir\HotelDir.Tests\bin\Debug\HotelDir.pdb
 H:\HotelDir\HotelDir.Tests\obj\Debug\ResolveAssemblyReference.cache
 H:\HotelDir\HotelDir.Tests\obj\Debug\HotelDir.Tests.dll
 H:\HotelDir\HotelDir.Tests\obj\Debug\HotelDir.Tests.pdb
+C:\Users\STEVE\Documents\GitHub\EnterpriseProject\HotelDir\HotelDir.Tests\bin\Debug\HotelDir.Tests.dll.config
+C:\Users\STEVE\Documents\GitHub\EnterpriseProject\HotelDir\HotelDir.Tests\bin\Debug\HotelDir.Tests.dll
+C:\Users\STEVE\Documents\GitHub\EnterpriseProject\HotelDir\HotelDir.Tests\bin\Debug\HotelDir.Tests.pdb
+C:\Users\STEVE\Documents\GitHub\EnterpriseProject\HotelDir\HotelDir.Tests\bin\Debug\HotelDir.dll
+C:\Users\STEVE\Documents\GitHub\EnterpriseProject\HotelDir\HotelDir.Tests\bin\Debug\HotelDir.pdb
+C:\Users\STEVE\Documents\GitHub\EnterpriseProject\HotelDir\HotelDir.Tests\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\STEVE\Documents\GitHub\EnterpriseProject\HotelDir\HotelDir.Tests\obj\Debug\HotelDir.Tests.dll
+C:\Users\STEVE\Documents\GitHub\EnterpriseProject\HotelDir\HotelDir.Tests\obj\Debug\HotelDir.Tests.pdb

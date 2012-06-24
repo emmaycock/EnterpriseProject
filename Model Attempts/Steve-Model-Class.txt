@@ -1,0 +1,47 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.ComponentModel.DataAnnotations;
+using System.Data.Linq.Mapping;
+
+
+namespace HotelDir.Models
+{
+    [Table (Name ="HOTELS")]
+    public class Hotel
+    {
+        //Add a column for each field
+        [Column(IsPrimaryKey=true)]
+        //Helpful to add an id as primary key
+        int id;
+        [Column(Name = "TITLE")]
+        String hotelTitle;
+        [Column(Name = "Address1")]
+        String hotelAddr1;
+        [Column(Name = "Address2")]
+        String hotelAddr2;
+		[Column(Name = "Address3")]
+        String hotelAddr3;
+		[Column(Name = "RATING"]
+        int starRating;
+
+        public int starRate
+        {
+            get { return starRate; }
+        }
+
+        //Constructor to initialise values in Hotel. 'this.' is optional
+        public Hotel(String _hotelTitle, String _hotelAddr1, String _hotelAddr2, String _hotelAddr3, int _starRating)
+        {
+            this.hotelTitle = _hotelTitle;
+            this.hotelAddr1 = _hotelAddr1;
+            this.hotelAddr2 = _hotelAddr2;
+			this.hotelAddr3 = _hotelAddr3;
+			this.starRating = _starRating;
+			
+        }
+
+
+    }
+}
