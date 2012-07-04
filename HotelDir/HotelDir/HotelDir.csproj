@@ -40,6 +40,7 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Data.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web.DynamicData" />
@@ -80,6 +81,7 @@
     <Compile Include="ingestion\newyorkcsvparser.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\HotelDetails.cs" />
+    <Compile Include="Models\HotelDetailsDB.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
