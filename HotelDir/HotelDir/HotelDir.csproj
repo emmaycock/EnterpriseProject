@@ -81,13 +81,14 @@
     <Compile Include="ingestion\newyorkcsvparser.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\HotelDetails.cs" />
-    <Compile Include="Models\HotelDetailsDB.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="Views\Home\Hotel.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
