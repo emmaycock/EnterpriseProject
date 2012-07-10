@@ -6,3 +6,6 @@ H:\HotelDir\HotelDir\obj\Debug\HotelDir.pdb
 C:\Users\STEVE\Documents\GitHub\EnterpriseProject\HotelDir\HotelDir\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\STEVE\Documents\GitHub\EnterpriseProject\HotelDir\HotelDir\obj\Debug\HotelDir.dll
 C:\Users\STEVE\Documents\GitHub\EnterpriseProject\HotelDir\HotelDir\obj\Debug\HotelDir.pdb
+C:\Users\-\Desktop\HotelDir\HotelDir\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\-\Desktop\HotelDir\HotelDir\obj\Debug\HotelDir.dll
+C:\Users\-\Desktop\HotelDir\HotelDir\obj\Debug\HotelDir.pdb

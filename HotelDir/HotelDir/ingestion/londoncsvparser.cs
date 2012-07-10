@@ -14,11 +14,11 @@ namespace HotelDir.ingestion
         private String supportedFormat = "csv";
         private StreamReader reader;
 
-        List<Models.HotelDetails> IDataParser.parseHotelDetails()
+        List<Models.HotelDetail> IDataParser.parseHotelDetails()
         {
             CsvReader csv = new CsvReader(reader, true);
             int fieldCount = csv.FieldCount;
-            List<HotelDetails> hotels = new List<HotelDetails>();
+            List<HotelDetail> hotels = new List<HotelDetail>();
 
             String[] headers = csv.GetFieldHeaders();
 
@@ -26,14 +26,14 @@ namespace HotelDir.ingestion
             {
                 //This is where the models come into effect
 
-                HotelDetails thisObj = new HotelDetails();
+                HotelDetail thisObj = new HotelDetail();
 
                 //This loop reflects contents of the model. Header captions match actual text in csv file
                 for (int i = 0; i < fieldCount; i++)
                 {
                     if (headers[i].Equals("doc_id"))
                     {
-                        thisObj.docId = csv[i];
+                        thisObj.docID = csv[i];
                     }
                     else if (headers[i].Equals("hotel_name"))
                     {

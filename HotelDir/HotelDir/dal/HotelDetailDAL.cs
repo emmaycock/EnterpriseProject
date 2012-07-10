@@ -11,7 +11,7 @@ namespace HotelDir.dal
     public class HotelDetailsDAL
     {
         //Access the DB
-        protected HotelDetailsDb db = new HotelDetailsDb();
+      //  protected HotelDetailsDb db = new HotelDetailsDb();
 
         public HotelDetailsDAL()
         {
@@ -54,12 +54,12 @@ namespace HotelDir.dal
         }
          */
 
-        public HotelDetails findHotelDetailsById(int id)
+        public HotelDetail findHotelDetailsById(int id)
         {
             return null;
         }
 
-        public HotelDetails addHotelDetails(HotelDetails hotel)
+        public HotelDetail addHotelDetails(HotelDetail hotel)
         {
             return null;
         }

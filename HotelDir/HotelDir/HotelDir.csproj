@@ -38,7 +38,7 @@
       <HintPath>..\packages\EntityFramework.4.3.1\lib\net40\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="LumenWorks.Framework.IO">
-      <HintPath>..\..\CsvReader_bin\LumenWorks.Framework.IO.dll</HintPath>
+      <HintPath>..\..\LumenWorks.Framework.IO.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
@@ -85,8 +85,8 @@
     <Compile Include="ingestion\londoncsvparser.cs" />
     <Compile Include="ingestion\newyorkcsvparser.cs" />
     <Compile Include="Models\AccountModels.cs" />
-    <Compile Include="Models\HotelDetails.cs" />
-    <Compile Include="Models\HotelDetailsDb.cs" />
+    <Compile Include="Models\HotelDetail.cs" />
+    <Compile Include="Models\HotelDetailsDB.cs" />
     <Compile Include="Models\ui\HotelUI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

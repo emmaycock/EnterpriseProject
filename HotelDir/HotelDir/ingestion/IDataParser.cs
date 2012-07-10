@@ -9,7 +9,7 @@ namespace HotelDir.ingestion
 {
     interface IDataParser
     {
-        List<HotelDetails> parseHotelDetails();
+        List<HotelDetail> parseHotelDetails();
         void setStreamSource(StreamReader reader);
         Boolean supportsType(String format);
     }

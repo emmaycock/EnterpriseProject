@@ -14,3 +14,13 @@ C:\Users\STEVE\Documents\GitHub\EnterpriseProject\HotelDir\HotelDir.Tests\bin\De
 C:\Users\STEVE\Documents\GitHub\EnterpriseProject\HotelDir\HotelDir.Tests\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\STEVE\Documents\GitHub\EnterpriseProject\HotelDir\HotelDir.Tests\obj\Debug\HotelDir.Tests.dll
 C:\Users\STEVE\Documents\GitHub\EnterpriseProject\HotelDir\HotelDir.Tests\obj\Debug\HotelDir.Tests.pdb
+C:\Users\-\Desktop\HotelDir\HotelDir.Tests\bin\Debug\HotelDir.Tests.dll.config
+C:\Users\-\Desktop\HotelDir\HotelDir.Tests\bin\Debug\HotelDir.Tests.dll
+C:\Users\-\Desktop\HotelDir\HotelDir.Tests\bin\Debug\HotelDir.Tests.pdb
+C:\Users\-\Desktop\HotelDir\HotelDir.Tests\bin\Debug\HotelDir.dll
+C:\Users\-\Desktop\HotelDir\HotelDir.Tests\bin\Debug\HotelDir.pdb
+C:\Users\-\Desktop\HotelDir\HotelDir.Tests\bin\Debug\HotelDir_Accessor.dll
+C:\Users\-\Desktop\HotelDir\HotelDir.Tests\bin\Debug\HotelDir_Accessor.pdb
+C:\Users\-\Desktop\HotelDir\HotelDir.Tests\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\-\Desktop\HotelDir\HotelDir.Tests\obj\Debug\HotelDir.Tests.dll
+C:\Users\-\Desktop\HotelDir\HotelDir.Tests\obj\Debug\HotelDir.Tests.pdb

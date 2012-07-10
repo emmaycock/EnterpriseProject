@@ -15,14 +15,14 @@ namespace HotelDir.ingestion
         private String supportedFormat = "csv";
         private StreamReader reader;
 
-        List<Models.HotelDetails> IDataParser.parseHotelDetails()
+        List<Models.HotelDetail> IDataParser.parseHotelDetails()
         {
             CsvReader csv = new CsvReader(reader, true);
             int fieldCount = csv.FieldCount;
 
 
             //Array storage
-            List<HotelDetails> hotels = new List<HotelDetails>();
+            List<HotelDetail> hotels = new List<HotelDetail>();
 
             String[] headers = csv.GetFieldHeaders();
 
@@ -30,14 +30,14 @@ namespace HotelDir.ingestion
             {
                 
                 //HotelDetails Model
-                HotelDetails thisObj = new HotelDetails();
+                HotelDetail thisObj = new HotelDetail();
 
                 //Each field represents a table in the database direct from the CSV file
                 for (int i = 0; i < fieldCount; i++)
                 {
                     if (headers[i].Equals("doc_id"))
                     {
-                        thisObj.docId = csv[i];
+                        thisObj.docID = csv[i];
                     }
                     else if (headers[i].Equals("hotel_name"))
                     {
@@ -119,7 +119,7 @@ namespace HotelDir.ingestion
             this.reader = reader;
         }
 
-        public bool IDataParser.supportsType(string format)
+        public bool supportsType(string format)
         {
             // Entered CSV file
             if (format.Equals(supportedFormat))
