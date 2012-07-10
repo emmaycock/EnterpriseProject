@@ -8,6 +8,7 @@ using HotelDir.Models.ui;
 //Database connectivity class
 namespace HotelDir.Models
 {
+    //DbContext enabled once EntityFramework package installed via Package Mgr Console
     public class HotelDetailsDb : DbContext
     {
         public DbSet<HotelDetails> hotelDetails { get; set; }
