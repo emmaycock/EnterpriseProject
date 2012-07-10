@@ -110,12 +110,12 @@ namespace HotelDir.ingestion
             return hotels;
         }
 
-        void IDataParser.setStreamSource(System.IO.StreamReader reader)
+        void IDataParser.setStreamSource(StreamReader reader)
         {
             this.reader = reader;
         }
 
-        public bool IDataParser.supportsType(string format)
+        public bool supportsType(string format)
         {
             //'throw' line removed as exception was being called as soon as this method was called
             if (format.Equals(supportedFormat))
