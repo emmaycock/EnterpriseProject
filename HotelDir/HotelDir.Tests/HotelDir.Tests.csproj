@@ -71,22 +71,10 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AccountControllerTest.cs" />
-    <Compile Include="AccountMembershipServiceTest.cs" />
-    <Compile Include="AccountValidationTest.cs" />
-    <Compile Include="ChangePasswordModelTest.cs" />
-    <Compile Include="FormsAuthenticationServiceTest.cs" />
-    <Compile Include="HomeControllerTest.cs" />
-    <Compile Include="IFormsAuthenticationServiceTest.cs" />
-    <Compile Include="IMembershipServiceTest.cs" />
-    <Compile Include="LogOnModelTest.cs" />
-    <Compile Include="MvcApplicationTest.cs" />
-    <Compile Include="PropertiesMustMatchAttributeTest.cs" />
+    <Compile Include="LondonCsvParserTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controllers\HomeControllerTest.cs" />
     <Compile Include="Controllers\AccountControllerTest.cs" />
-    <Compile Include="RegisterModelTest.cs" />
-    <Compile Include="ValidatePasswordLengthAttributeTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.config" />
