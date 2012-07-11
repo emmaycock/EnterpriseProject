@@ -37,6 +37,8 @@
   <ItemGroup>
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.4.3.1\lib\net40\EntityFramework.dll</HintPath>
+    <Reference Include="LumenWorks.Framework.IO">
+      <HintPath>..\..\..\..\..\Desktop\LumenWorks.Framework.IO.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
@@ -129,13 +131,19 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="dal\HotelDetailDAL.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="HotelDetailDB.cs" />
+    <Compile Include="ingestion\IDataParser.cs" />
+    <Compile Include="ingestion\londoncsvparser.cs" />
+    <Compile Include="ingestion\newyorkcsvparser.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\HotelDetail.cs" />
-    <Compile Include="Models\HotelDetailController.cs" />
+    <Compile Include="Controllers\HotelDetailController.cs" />
+    <Compile Include="Models\HotelDetailDB.cs" />
+    <Compile Include="Models\ui\HotelUI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -261,7 +269,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>29164</DevelopmentServerPort>
+          <DevelopmentServerPort>41211</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>
