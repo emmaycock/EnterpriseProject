@@ -9,12 +9,12 @@ using MvcApplication1.Models;
 
 namespace MvcApplication1.ingestion
 {
-    public class londoncsvparser
+    public class londoncsvparser : IDataParser
     {
         private String supportedFormat = "csv";
         private StreamReader reader;
 
-        List<Models.HotelDetail> IDataParser.parseHotelDetails()
+        public List<Models.HotelDetail> parseHotelDetails()
         {
             CsvReader csv = new CsvReader(reader, true);
             int fieldCount = csv.FieldCount;

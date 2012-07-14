@@ -10,7 +10,7 @@ namespace MvcApplication1.Models
 {
     public class HotelDetailController : Controller
     {
-        private HotelDetailDB db = new HotelDetailDB();
+        private HotelModDB db = new HotelModDB();
 
         //
         // GET: /HotelDetail/
