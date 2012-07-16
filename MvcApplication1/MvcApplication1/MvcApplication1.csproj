@@ -141,13 +141,15 @@
     <Compile Include="ingestion\londoncsvparser.cs" />
     <Compile Include="ingestion\newyorkcsvparser.cs" />
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\City.cs" />
     <Compile Include="Models\HotelDetail.cs" />
     <Compile Include="Controllers\HotelDetailController.cs" />
-    <Compile Include="Models\HotelModDB.cs" />
+    <Compile Include="Models\NewHotelDb.cs" />
     <Compile Include="Models\Room.cs" />
     <Compile Include="Models\SearchHotel.cs" />
     <Compile Include="Models\SingleHotel.cs" />
     <Compile Include="Models\ui\HotelUI.cs" />
+    <Compile Include="Models\WorldHotelDetail.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

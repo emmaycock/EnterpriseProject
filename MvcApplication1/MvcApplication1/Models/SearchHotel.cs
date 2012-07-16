@@ -8,8 +8,8 @@ namespace MvcApplication1.Models
 {
     public class SearchHotel
     {
-        [Column(IsPrimaryKey = true, Storage = "_HotelID")]
-        public int HotelID;
+        [Column(IsPrimaryKey = true)]
+        public int ID { get; set; }
 
         public String hotelName { get; set; }
         public String city { get; set; }

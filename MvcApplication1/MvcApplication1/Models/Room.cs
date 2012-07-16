@@ -9,8 +9,8 @@ namespace MvcApplication1.Models
     public class Room
     {
         //Temp Class
-        [Column(IsPrimaryKey = true, Storage = "_roomnumberID")]
-        public int roomnumberID;
+        [Column(IsPrimaryKey = true)]
+        public int ID { get; set; }
 
         public int hotelid { get; set; }
         public int doornumber { get; set; }

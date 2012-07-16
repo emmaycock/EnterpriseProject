@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Data.Linq.Mapping;
 
 namespace MvcApplication1.Models
 {
     public class SingleHotel
     {
-        public int hotelid;
+        [Column(IsPrimaryKey = true)]
+        public int ID { get; set; }
 
         public String HotelName { get; set; }
         public String Street { get; set; }
