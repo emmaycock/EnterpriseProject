@@ -257,6 +257,12 @@
   <ItemGroup>
     <Content Include="Views\HotelDetail\Delete.cshtml" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="csvFiles\las-vegas.csv" />
+    <None Include="csvFiles\london.csv" />
+    <None Include="csvFiles\new-york-city.csv" />
+    <None Include="csvFiles\san-francisco.csv" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
