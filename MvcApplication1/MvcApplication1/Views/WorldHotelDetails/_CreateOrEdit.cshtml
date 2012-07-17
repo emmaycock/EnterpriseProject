@@ -1,0 +1,116 @@
+@model MvcApplication1.Models.WorldHotelDetail
+
+@* This partial view defines form fields that will appear when creating and editing entities *@
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.worldhotelID)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.worldhotelID)
+    @Html.ValidationMessageFor(model => model.worldhotelID)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.hotelName)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.hotelName)
+    @Html.ValidationMessageFor(model => model.hotelName)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.street)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.street)
+    @Html.ValidationMessageFor(model => model.street)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.zip)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.zip)
+    @Html.ValidationMessageFor(model => model.zip)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.city)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.city)
+    @Html.ValidationMessageFor(model => model.city)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.state)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.state)
+    @Html.ValidationMessageFor(model => model.state)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.country)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.country)
+    @Html.ValidationMessageFor(model => model.country)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.latitude)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.latitude)
+    @Html.ValidationMessageFor(model => model.latitude)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.longitude)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.longitude)
+    @Html.ValidationMessageFor(model => model.longitude)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.hotelUrl)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.hotelUrl)
+    @Html.ValidationMessageFor(model => model.hotelUrl)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.starRating)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.starRating)
+    @Html.ValidationMessageFor(model => model.starRating)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.thumbnailurl)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.thumbnailurl)
+    @Html.ValidationMessageFor(model => model.thumbnailurl)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.photourl)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.photourl)
+    @Html.ValidationMessageFor(model => model.photourl)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.description)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.description)
+    @Html.ValidationMessageFor(model => model.description)
+</div>
+

@@ -1,0 +1,59 @@
+@model MvcApplication1.Models.WorldHotelDetail
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>WorldHotelDetail</legend>
+
+    <div class="display-label">worldhotelID</div>
+    <div class="display-field">@Model.worldhotelID</div>
+
+    <div class="display-label">hotelName</div>
+    <div class="display-field">@Model.hotelName</div>
+
+    <div class="display-label">street</div>
+    <div class="display-field">@Model.street</div>
+
+    <div class="display-label">zip</div>
+    <div class="display-field">@Model.zip</div>
+
+    <div class="display-label">city</div>
+    <div class="display-field">@Model.city</div>
+
+    <div class="display-label">state</div>
+    <div class="display-field">@Model.state</div>
+
+    <div class="display-label">country</div>
+    <div class="display-field">@Model.country</div>
+
+    <div class="display-label">latitude</div>
+    <div class="display-field">@Model.latitude</div>
+
+    <div class="display-label">longitude</div>
+    <div class="display-field">@Model.longitude</div>
+
+    <div class="display-label">hotelUrl</div>
+    <div class="display-field">@Model.hotelUrl</div>
+
+    <div class="display-label">starRating</div>
+    <div class="display-field">@Model.starRating</div>
+
+    <div class="display-label">thumbnailurl</div>
+    <div class="display-field">@Model.thumbnailurl</div>
+
+    <div class="display-label">photourl</div>
+    <div class="display-field">@Model.photourl</div>
+
+    <div class="display-label">description</div>
+    <div class="display-field">@Model.description</div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+

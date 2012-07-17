@@ -132,6 +132,10 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\RoomsController.cs" />
+    <Compile Include="Controllers\SearchHotelsController.cs" />
+    <Compile Include="Controllers\SingleHotelsController.cs" />
+    <Compile Include="Controllers\WorldHotelDetailsController.cs" />
     <Compile Include="dal\HotelDetailDAL.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -144,6 +148,7 @@
     <Compile Include="Models\City.cs" />
     <Compile Include="Models\HotelDetail.cs" />
     <Compile Include="Controllers\HotelDetailController.cs" />
+    <Compile Include="Models\MvcApplication1Context.cs" />
     <Compile Include="Models\NewHotelDb.cs" />
     <Compile Include="Models\Room.cs" />
     <Compile Include="Models\SearchHotel.cs" />
@@ -260,10 +265,76 @@
     <Content Include="Views\HotelDetail\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="csvFiles\las-vegas.csv" />
-    <None Include="csvFiles\london.csv" />
-    <None Include="csvFiles\new-york-city.csv" />
-    <None Include="csvFiles\san-francisco.csv" />
+    <Content Include="Views\Rooms\Create.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Rooms\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Rooms\Delete.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Rooms\Details.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Rooms\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Rooms\_CreateOrEdit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\SearchHotels\Create.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\SearchHotels\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\SearchHotels\Delete.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\SearchHotels\Details.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\SearchHotels\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\SearchHotels\_CreateOrEdit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\SingleHotels\Create.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\SingleHotels\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\SingleHotels\Delete.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\SingleHotels\Details.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\SingleHotels\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\SingleHotels\_CreateOrEdit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\WorldHotelDetails\Create.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\WorldHotelDetails\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\WorldHotelDetails\Delete.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\WorldHotelDetails\Details.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\WorldHotelDetails\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\WorldHotelDetails\_CreateOrEdit.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
