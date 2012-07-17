@@ -13,3 +13,6 @@ namespace MvcApplication1.Models.ui
         public string street { get; set; }
     }
 }
+
+
+/* this is a model that deals with the views towards the user as opposed to the models that deal with the database */
