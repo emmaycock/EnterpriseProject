@@ -118,6 +118,11 @@ namespace MvcApplication1.ingestion
         public bool supportsType(string format)
         {
             //'throw' line removed as exception was being called as soon as this method was called
+            if (format == null)
+            {
+                return false;
+            }
+
             if (format.Equals(supportedFormat))
             {
                 return true;

@@ -7,7 +7,7 @@ using System.IO;
 
 namespace MvcApplication1.ingestion
 {
-    interface IDataParser
+    public interface IDataParser
     {
         List<HotelDetail> parseHotelDetails();
         void setStreamSource(StreamReader reader);
