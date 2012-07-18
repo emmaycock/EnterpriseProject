@@ -140,8 +140,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="ingestion\cityloadCSV.cs" />
-    <Compile Include="ingestion\cityparser.cs" />
     <Compile Include="ingestion\IDataParser.cs" />
     <Compile Include="ingestion\lasvegasparser.cs" />
     <Compile Include="ingestion\londoncsvparser.cs" />
