@@ -1,0 +1,113 @@
+@model IEnumerable<MvcApplication1.Models.WorldHotelDetail>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th></th>
+        <th>
+            worldhotelID
+        </th>
+        <th>
+            hotelName
+        </th>
+        <th>
+            street
+        </th>
+        <th>
+            zip
+        </th>
+        <th>
+            city
+        </th>
+        <th>
+            state
+        </th>
+        <th>
+            country
+        </th>
+        <th>
+            latitude
+        </th>
+        <th>
+            longitude
+        </th>
+        <th>
+            hotelUrl
+        </th>
+        <th>
+            starRating
+        </th>
+        <th>
+            thumbnailurl
+        </th>
+        <th>
+            photourl
+        </th>
+        <th>
+            description
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+        <td>
+			@item.worldhotelID
+        </td>
+        <td>
+			@item.hotelName
+        </td>
+        <td>
+			@item.street
+        </td>
+        <td>
+			@item.zip
+        </td>
+        <td>
+			@item.city
+        </td>
+        <td>
+			@item.state
+        </td>
+        <td>
+			@item.country
+        </td>
+        <td>
+			@item.latitude
+        </td>
+        <td>
+			@item.longitude
+        </td>
+        <td>
+			@item.hotelUrl
+        </td>
+        <td>
+			@item.starRating
+        </td>
+        <td>
+			@item.thumbnailurl
+        </td>
+        <td>
+			@item.photourl
+        </td>
+        <td>
+			@item.description
+        </td>
+    </tr>
+}
+
+</table>
+
+

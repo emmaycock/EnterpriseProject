@@ -1,0 +1,171 @@
+﻿@model MvcApplication1.Models.HotelDetail
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>HotelDetail</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.docID)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.docID)
+            @Html.ValidationMessageFor(model => model.docID)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.hotelName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.hotelName)
+            @Html.ValidationMessageFor(model => model.hotelName)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.hotelUrl)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.hotelUrl)
+            @Html.ValidationMessageFor(model => model.hotelUrl)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.street)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.street)
+            @Html.ValidationMessageFor(model => model.street)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.city)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.city)
+            @Html.ValidationMessageFor(model => model.city)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.state)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.state)
+            @Html.ValidationMessageFor(model => model.state)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.country)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.country)
+            @Html.ValidationMessageFor(model => model.country)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.zip)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.zip)
+            @Html.ValidationMessageFor(model => model.zip)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.classRating)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.classRating)
+            @Html.ValidationMessageFor(model => model.classRating)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.price)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.price)
+            @Html.ValidationMessageFor(model => model.price)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.numReviews)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.numReviews)
+            @Html.ValidationMessageFor(model => model.numReviews)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.cleanliness)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.cleanliness)
+            @Html.ValidationMessageFor(model => model.cleanliness)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.room)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.room)
+            @Html.ValidationMessageFor(model => model.room)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.service)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.service)
+            @Html.ValidationMessageFor(model => model.service)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.location)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.location)
+            @Html.ValidationMessageFor(model => model.location)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.value)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.value)
+            @Html.ValidationMessageFor(model => model.value)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.comfort)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.comfort)
+            @Html.ValidationMessageFor(model => model.comfort)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.overallRating)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.overallRating)
+            @Html.ValidationMessageFor(model => model.overallRating)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

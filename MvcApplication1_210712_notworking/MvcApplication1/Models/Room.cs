@@ -6,14 +6,17 @@ using System.Data.Linq.Mapping;
 
 namespace MvcApplication1.Models
 {
-    public class SearchHotel
+    public class Room
     {
+        //Temp Class
         [Column(IsPrimaryKey = true)]
         public int ID { get; set; }
 
-        public String hotelName { get; set; }
-        public String city { get; set; }
-        public String review { get; set; }
-
+        public int hotelid { get; set; }
+        public int doornumber { get; set; }
+        public int price { get; set; }
+        public String type { get; set; }
+    
+    
     }
 }

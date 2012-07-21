@@ -1,35 +1,30 @@
-@model IEnumerable<MvcApplication1.Models.SearchHotel>
+@model IEnumerable<MvcApplication1.Models.Room>
 
 @{
-    ViewBag.Title = "Search Hotels";
+    ViewBag.Title = "Index";
 }
 
-<br />
-<br />
+<h2>Index</h2>
 
-<h3>Enter city to search below</h3>
-<br />
-@Html.TextBox("SearchString")
-<br />
-<br />
-<input style = "background-color: #d3dce0; border: 1px solid #787878;  font-weight: 600;  padding: 7px;"  type="submit" value="Search" />
-
-
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
 <table>
-<!--
     <tr>
         <th></th>
         <th>
-            hotelName
+            hotelid
         </th>
         <th>
-            city
+            doornumber
         </th>
         <th>
-            review
+            price
+        </th>
+        <th>
+            type
         </th>
     </tr>
-    -->
 
 @foreach (var item in Model) {
     <tr>
@@ -39,13 +34,16 @@
             @Html.ActionLink("Delete", "Delete", new { id=item.ID })
         </td>
         <td>
-			@item.hotelName
+			@item.hotelid
         </td>
         <td>
-			@item.city
+			@item.doornumber
         </td>
         <td>
-			@item.review
+			@item.price
+        </td>
+        <td>
+			@item.type
         </td>
     </tr>
 }

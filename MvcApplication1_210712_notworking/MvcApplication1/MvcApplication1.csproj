@@ -141,14 +141,12 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="ingestion\IDataParser.cs" />
-    <Compile Include="ingestion\lasvegasparser.cs" />
+    <Compile Include="ingestion\LoadCSV.cs" />
     <Compile Include="ingestion\londoncsvparser.cs" />
-    <Compile Include="ingestion\newyorkcsvparser.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\City.cs" />
     <Compile Include="Models\HotelDetail.cs" />
     <Compile Include="Controllers\HotelDetailController.cs" />
-    <Compile Include="Models\MvcApplication1Context.cs" />
     <Compile Include="Models\NewHotelDb.cs" />
     <Compile Include="Models\Room.cs" />
     <Compile Include="Models\SearchHotel.cs" />
@@ -335,6 +333,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\WorldHotelDetails\_CreateOrEdit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\HotelDetail\Hotellist.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -11,8 +11,11 @@ namespace MvcApplication1.Models
         [Column(IsPrimaryKey = true)]
         public int ID { get; set; }
 
+          [Column]
         public String hotelName { get; set; }
+          [Column]
         public String city { get; set; }
+          [Column]
         public String review { get; set; }
 
     }
