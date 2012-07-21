@@ -1,0 +1,3 @@
+HotelName,City,Review,,Street2,City,State,Country,Longtitude,Latitude,Rating,Totalrooms,Theme,Description,Image,Wifi,Parking,Fitness,Spa,Bar,Restaurant,Pool,Room1type,Room1desc,Room1rate,Room2type,Room2desc,Room2rate,Room3type,Room3desc,Room3rate,Room4type,Room4desc,Room4rate
+Test,Test1,Test2,,Ballsbridge,Dublin,na,Ireland,12,12,4,95,Citybreak,This is a great place,http//images,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,Single,One Bed,55,Double,Two beds or twin,95,Queen,Extra large,100,Superior,Massive room,150
+Test,Test1,Test2,,Salthill,Galway,na,Ireland,13,13,3,103,Citybreak,This is a great place,http//images,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,Single,One Bed,45,Double,Two beds or twin,66,Queen,Extra large,105,Superior,Massive room,149

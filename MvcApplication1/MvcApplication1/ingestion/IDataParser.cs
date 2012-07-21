@@ -9,10 +9,10 @@ namespace MvcApplication1.ingestion
 {
     public interface IDataParser
     {
-       // List<HotelDetail> parseHotelDetails();
+          List<HotelDetail> parseHotelDetails();
        // List<City> parseCity();
        // List<Room> parseRoom();
-       // List<SearchHotel> parseSearchHotel();
+        //List<SearchHotel> parseSearchHotellist();
        // List<SingleHotel> parseSingleHotel();
        // List<WorldHotelDetail> parseWorldHotelDetail();
 
