@@ -141,9 +141,8 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="ingestion\IDataParser.cs" />
-    <Compile Include="ingestion\lasvegasparser.cs" />
+    <Compile Include="ingestion\LoadCSV.cs" />
     <Compile Include="ingestion\londoncsvparser.cs" />
-    <Compile Include="ingestion\newyorkcsvparser.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\City.cs" />
     <Compile Include="Models\HotelDetail.cs" />
