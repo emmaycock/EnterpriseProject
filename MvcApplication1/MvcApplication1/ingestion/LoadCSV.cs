@@ -13,7 +13,7 @@ namespace MvcApplication1
    public class InitialiseCSV
    {
        public IDataParser csvparse = new londoncsvparser();
-       string csvpath =("C:\\Users\\maura\\Desktop\\London.csv");
+       string csvpath = ("C:\\Users\\maura\\Desktop\\London.csv");
 
        public List<HotelDetail> importHotelCSVData()
        {
