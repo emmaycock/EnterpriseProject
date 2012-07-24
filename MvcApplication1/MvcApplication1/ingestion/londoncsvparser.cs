@@ -16,6 +16,7 @@ namespace MvcApplication1.ingestion
 
         public List<Models.HotelDetail> parseHotelDetails()
         {
+            Console.WriteLine("Inside the method");
             CsvReader csv = new CsvReader(reader, true);
             int fieldCount = csv.FieldCount;
             List<HotelDetail> hotels = new List<HotelDetail>();
@@ -27,7 +28,7 @@ namespace MvcApplication1.ingestion
                 //This is where the models come into effect
 
                 HotelDetail thisObj = new HotelDetail();
-
+                
                 //This loop reflects contents of the model. Header captions match actual text in csv file
                 for (int i = 0; i < fieldCount; i++)
                 {

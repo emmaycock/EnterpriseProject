@@ -4,65 +4,27 @@ using System.Linq;
 using System.Web;
 using MvcApplication1.Models;
 using System.Configuration;
+using MvcApplication1.ingestion;
 
 //Class for handling Data Access Layer
+
 namespace MvcApplication1.dal
 {
-    public class HotelDetailsDAL
+    public class HotelDetailDAL
     {
-        //Access the DB
-        //  protected HotelDetailsDb db = new HotelDetailsDb();
-
-        public HotelDetailsDAL()
+        NewHotelDb db = new NewHotelDb();
+        public HotelDetailDAL()
         {
-            ConnectionStringSettingsCollection connections = ConfigurationManager.ConnectionStrings;
-            if (connections.Count != 0)
-            {
-                Console.WriteLine();
-                System.Diagnostics.Debug.WriteLine("Using ConnectionStrings property.");
-
-
-                //get the collection elements.
-                foreach (ConnectionStringSettings connection in
-                    connections)
-                {
-                    string name = connection.Name;
-                    string provider = connection.ProviderName;
-                    string connectionString = connection.ConnectionString;
-
-                    System.Diagnostics.Debug.WriteLine("Name:                {0}",
-                        name);
-                    System.Diagnostics.Debug.WriteLine(" Connection string:  {0}",
-                        connectionString);
-                    System.Diagnostics.Debug.WriteLine("Provider:           {0}",
-                       provider);
-
-                }
+            InitialiseCSV csv = new InitialiseCSV();
+            List<HotelDetail> data = csv.importHotelCSVData();
+            foreach(HotelDetail d in data){
+                db.HotelDetails.Add(d);
             }
-            else
-            {
-                System.Diagnostics.Debug.WriteLine("No connection string is defined.");
-            }
-        }
+            db.SaveChanges();
 
-        //Method defined in logic layer is called here in the DAL
-        /*
-        public HotelDetails <Method>(param1, param2)
-        {
-           return null;
-
-        }
-         */
-
-        public HotelDetail findHotelDetailsById(int id)
-        {
-            return null;
-        }
-
-        public HotelDetail addHotelDetails(HotelDetail hotel)
-        {
-            return null;
         }
 
     }
+
+    
 }
