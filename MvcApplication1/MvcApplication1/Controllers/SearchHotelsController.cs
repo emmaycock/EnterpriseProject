@@ -6,6 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using MvcApplication1.Models;
+using MvcApplication1.ViewModels;
 
 namespace MvcApplication1.Controllers
 {   
@@ -20,7 +21,7 @@ namespace MvcApplication1.Controllers
         {
             return View(context.SearchHotels.ToList());
         }
-
+                
         //
         // GET: /SearchHotels/Details/5
 

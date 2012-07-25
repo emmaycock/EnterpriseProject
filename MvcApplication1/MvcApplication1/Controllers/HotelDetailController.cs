@@ -5,6 +5,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using MvcApplication1.ViewModels;
 
 namespace MvcApplication1.Models
 {
@@ -22,6 +23,42 @@ namespace MvcApplication1.Models
 
         //
         // GET: /HotelDetail/Details/5
+
+
+
+        public ActionResult SearchHotels(string searchCity)
+        {
+
+                    
+            
+                List<HotelList> h1 = new List<HotelList>();
+                Business_Logic.Hotellogic x1 = new Business_Logic.Hotellogic();
+                h1 = x1.GetHotelListByCity(searchCity);
+                return View("SearchHotels", h1);
+            
+
+
+
+            
+            /*
+            if (!String.IsNullOrEmpty(searchCity))
+            {
+                List<HotelList> h1 = new List<HotelList>();
+                Business_Logic.Hotellogic x1 = new Business_Logic.Hotellogic();
+                h1 = x1.GetHotelListByCity(searchCity);
+                return View("SearchHotels", h1);
+            }
+            else
+            {
+                return View("../Home/Index");
+            }
+            */
+        
+        
+        
+        }
+
+
 
         public ActionResult Details(int id = 0)
         {

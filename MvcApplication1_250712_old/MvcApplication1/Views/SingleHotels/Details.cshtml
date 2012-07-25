@@ -1,0 +1,38 @@
+@model MvcApplication1.Models.SingleHotel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>SingleHotel</legend>
+
+    <div class="display-label">HotelName</div>
+    <div class="display-field">@Model.HotelName</div>
+
+    <div class="display-label">Street</div>
+    <div class="display-field">@Model.Street</div>
+
+    <div class="display-label">City</div>
+    <div class="display-field">@Model.City</div>
+
+    <div class="display-label">State</div>
+    <div class="display-field">@Model.State</div>
+
+    <div class="display-label">Zip</div>
+    <div class="display-field">@Model.Zip</div>
+
+    <div class="display-label">Phone</div>
+    <div class="display-field">@Model.Phone</div>
+
+    <div class="display-label">hotelUrl</div>
+    <div class="display-field">@Model.hotelUrl</div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+

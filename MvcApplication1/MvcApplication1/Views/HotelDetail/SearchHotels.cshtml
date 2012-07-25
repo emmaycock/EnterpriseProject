@@ -1,0 +1,40 @@
+﻿
+@model IEnumerable<MvcApplication1.ViewModels.HotelList>
+@{
+    ViewBag.Title = "Hotel Search Results";
+}
+
+<h1>Search Results</h1>
+<br />
+
+<br /><br />
+
+
+<table>
+@foreach (var item in Model) {
+    <tr>
+        
+        <td>
+                Hotel Name: @Html.DisplayFor(modelItem => item.HotelName)
+                <br />
+        
+                City      : @Html.DisplayFor(modelItem => item.HotelCity)
+            <br />
+        
+                Country    : @Html.DisplayFor(modelItem => item.HotelCountry)
+            <br />
+        
+                Overall Rating     : @Html.DisplayFor(modelItem => item.HotelOverallRating)
+            <br />
+            <br />
+                @Html.DisplayFor(modelItem => item.HotelDesc)
+            <br /><br />
+                        
+                
+         </td>
+    </tr>
+   
+}
+
+</table>
+

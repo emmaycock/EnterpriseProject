@@ -7,36 +7,34 @@
 <br />
 <br />
 
-<h3>Enter city to search below</h3>
-<br />
-@Html.TextBox("SearchString")
-<br />
-<br />
-<input style = "background-color: #d3dce0; border: 1px solid #787878;  font-weight: 600;  padding: 7px;"  type="submit" value="Search" />
 
 
-<table>
+<!-- <table> -->
+
+
+@using (Html.BeginForm("SearchHotels", "HotelDetail", FormMethod.Get ,new { id= "searchform" }))
+{
+   
+           <h3>Enter destination city below</h3><br />
+            
+            @Html.TextBox("SearchString")                
+            <br />
+            <br />
+            <input style = "background-color: #d3dce0;font-size: 1.2em; border: 1px solid #787878;  font-weight: 600;  padding: 7px;"  type="submit" value="Search Hotels" />
+        
+}
+
+
+
+
 <!--
-    <tr>
-        <th></th>
-        <th>
-            hotelName
-        </th>
-        <th>
-            city
-        </th>
-        <th>
-            review
-        </th>
-    </tr>
-    -->
-
-@foreach (var item in Model) {
+@foreach (var item in Model)
+{
     <tr>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+            @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.ID })
         </td>
         <td>
 			@item.hotelName
@@ -50,6 +48,10 @@
     </tr>
 }
 
+-->
+
+<!--
 </table>
+-->
 
 

@@ -23,6 +23,15 @@ namespace MvcApplication1.dal
             db.SaveChanges();
 
         }
+        
+        
+         public IEnumerable<HotelDetail> getHotelByCity(string _city)
+             {
+                 List<HotelDetail> hotellist = new List<HotelDetail>();
+                 IEnumerable<HotelDetail> list = (from h in db.HotelDetails where h.city.Contains(_city) select h);        
+                return list;
+             }
+         
 
     }
 

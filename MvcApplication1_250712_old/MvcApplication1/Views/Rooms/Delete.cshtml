@@ -1,0 +1,32 @@
+@model MvcApplication1.Models.Room
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>Room</legend>
+
+    <div class="display-label">hotelid</div>
+    <div class="display-field">@Model.hotelid</div>
+
+    <div class="display-label">doornumber</div>
+    <div class="display-field">@Model.doornumber</div>
+
+    <div class="display-label">price</div>
+    <div class="display-field">@Model.price</div>
+
+    <div class="display-label">type</div>
+    <div class="display-field">@Model.type</div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}
+
+

@@ -1,0 +1,36 @@
+@model MvcApplication1.Models.Room
+
+@* This partial view defines form fields that will appear when creating and editing entities *@
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.hotelid)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.hotelid)
+    @Html.ValidationMessageFor(model => model.hotelid)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.doornumber)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.doornumber)
+    @Html.ValidationMessageFor(model => model.doornumber)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.price)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.price)
+    @Html.ValidationMessageFor(model => model.price)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.type)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.type)
+    @Html.ValidationMessageFor(model => model.type)
+</div>
+
