@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using MvcApplication1.dal;
+using MvcApplication1.Models;
 
 namespace MvcApplication1.Controllers
 {
@@ -14,6 +15,8 @@ namespace MvcApplication1.Controllers
         {
             ViewBag.Message = "";
 
+          
+           
             return View();
         }
 
@@ -28,6 +31,14 @@ namespace MvcApplication1.Controllers
         {
             ViewBag.Message = "Your contact page.";
 
+            return View();
+        }
+
+        public ActionResult LoadCSV()
+        {
+            // This Action calls import csv from DAL layer
+
+            dal.importCSV();
             return View();
         }
     }

@@ -26,14 +26,14 @@ namespace MvcApplication1.Models
 
 
 
-        public ActionResult SearchHotels(string searchCity)
+        public ActionResult SearchHotels(string SearchString)
         {
 
                     
             
                 List<HotelList> h1 = new List<HotelList>();
                 Business_Logic.Hotellogic x1 = new Business_Logic.Hotellogic();
-                h1 = x1.GetHotelListByCity(searchCity);
+                h1 = x1.GetHotelListByCity(SearchString);
                 return View("SearchHotels", h1);
             
 

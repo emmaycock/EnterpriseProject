@@ -17,8 +17,9 @@ namespace MvcApplication1.Controllers
         //
         // GET: /SearchHotels/
 
-        public ViewResult Index()
+        public ViewResult Index(string searchString)
         {
+            var test = searchString;
             return View(context.SearchHotels.ToList());
         }
                 

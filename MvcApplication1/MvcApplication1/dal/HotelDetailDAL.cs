@@ -13,8 +13,11 @@ namespace MvcApplication1.dal
     public class HotelDetailDAL
     {
         NewHotelDb db = new NewHotelDb();
-        public HotelDetailDAL()
+
+
+        public void importCSV()
         {
+
             InitialiseCSV csv = new InitialiseCSV();
             List<HotelDetail> data = csv.importHotelCSVData();
             foreach(HotelDetail d in data){
