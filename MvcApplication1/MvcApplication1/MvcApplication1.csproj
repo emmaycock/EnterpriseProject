@@ -126,9 +126,6 @@
       <Private>True</Private>
       <HintPath>..\packages\WebGrease.1.0.0\lib\Antlr3.Runtime.dll</HintPath>
     </Reference>
-    <Reference Include="WineApi">
-      <HintPath>..\packages\WineApi.1.0.3\lib\net40\WineApi.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -344,6 +341,9 @@
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />
     <Content Include="Views\HotelDetail\SearchHotels.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
