@@ -254,9 +254,6 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\HotelDetail\Index.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Views\HotelDetail\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -344,6 +341,7 @@
     <None Include="ClassDiagram1.cd" />
     <Content Include="Views\HotelDetail\SearchHotels.cshtml" />
     <Content Include="Views\Home\LoadCSV.cshtml" />
+    <Content Include="Views\HotelDetail\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
