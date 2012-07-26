@@ -6,6 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using MvcApplication1.ViewModels;
+using MvcApplication1.Business_Logic;
 
 namespace MvcApplication1.Models
 {
@@ -31,8 +32,8 @@ namespace MvcApplication1.Models
 
                     
             
-                List<HotelList> h1 = new List<HotelList>();
-                Business_Logic.Hotellogic x1 = new Business_Logic.Hotellogic();
+                List<CityHotels_VM> h1 = new List<CityHotels_VM>();
+                CityHotels_BLL x1 = new CityHotels_BLL();
                 h1 = x1.GetHotelListByCity(SearchString);
                 return View("SearchHotels", h1);
             

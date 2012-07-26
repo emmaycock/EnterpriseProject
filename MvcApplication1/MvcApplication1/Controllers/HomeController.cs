@@ -10,9 +10,30 @@ namespace MvcApplication1.Controllers
 {
     public class HomeController : Controller
     {
-        HotelDetailDAL dal = new HotelDetailDAL();
+        CityHotels_DAL dal = new CityHotels_DAL();
+        NewHotelDb db = new NewHotelDb();
         public ActionResult Index()
         {
+
+
+            bool HotelDetailexists = false;
+
+            HotelDetailexists = db.Database.Exists();
+
+            if (HotelDetailexists)
+            {
+
+                //for development purposes only
+               // db.Database.Delete();
+               // db.Database.Create();
+
+            }
+            else
+            {
+                db.Database.Create();
+
+
+            }
             ViewBag.Message = "";
 
           

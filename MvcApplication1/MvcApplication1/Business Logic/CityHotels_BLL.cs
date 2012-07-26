@@ -7,18 +7,18 @@ using MvcApplication1.Models;
 
 namespace MvcApplication1.Business_Logic
 {
-    public class Hotellogic
+    public class CityHotels_BLL
     {
               
-        public List<HotelList> GetHotelListByCity(string _city)
+        public List<CityHotels_VM> GetHotelListByCity(string _city)
         {
                         
-            dal.HotelDetailDAL findHotels = new dal.HotelDetailDAL();           
+            dal.CityHotels_DAL findHotels = new dal.CityHotels_DAL();           
 
          
             IEnumerable<HotelDetail> returnlist = new List<HotelDetail>();
             //Hotel View Model
-            List<HotelList> hotelviewlist = new List<HotelList>();
+            List<CityHotels_VM> hotelviewlist = new List<CityHotels_VM>();
 
             //List of hotels matching city entered
             returnlist = findHotels.getHotelByCity(_city);
@@ -27,13 +27,13 @@ namespace MvcApplication1.Business_Logic
             {                         
                                     
                     //Add Hotel to Search Results
-                    HotelList searchresults = new HotelList
+                    CityHotels_VM searchresults = new CityHotels_VM
                     {
                         Id = h.ID,
                         HotelName = h.hotelName,
                         HotelCity = h.city,
-                        HotelOverallRating = h.overallRating,
-                        HotelCountry = h.country
+                        HotelCountry = h.country,
+                        HotelOverallRating = h.overallRating
                     };
                     hotelviewlist.Add(searchresults);                
                 

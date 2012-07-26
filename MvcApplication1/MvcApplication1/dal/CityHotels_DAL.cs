@@ -5,12 +5,13 @@ using System.Web;
 using MvcApplication1.Models;
 using System.Configuration;
 using MvcApplication1.ingestion;
+using MvcApplication1.ViewModels;
 
 //Class for handling Data Access Layer
 
 namespace MvcApplication1.dal
 {
-    public class HotelDetailDAL
+    public class CityHotels_DAL
     {
         NewHotelDb db = new NewHotelDb();
 
@@ -26,8 +27,8 @@ namespace MvcApplication1.dal
             db.SaveChanges();
 
         }
-        
-        
+
+
          public IEnumerable<HotelDetail> getHotelByCity(string _city)
              {
                  List<HotelDetail> hotellist = new List<HotelDetail>();

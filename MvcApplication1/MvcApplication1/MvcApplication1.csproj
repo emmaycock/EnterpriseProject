@@ -131,14 +131,14 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Business Logic\Hotellogic.cs" />
+    <Compile Include="Business Logic\CityHotels_BLL.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\RoomsController.cs" />
     <Compile Include="Controllers\SearchHotelsController.cs" />
     <Compile Include="Controllers\SingleHotelsController.cs" />
     <Compile Include="Controllers\WorldHotelDetailsController.cs" />
-    <Compile Include="dal\HotelDetailDAL.cs" />
+    <Compile Include="dal\CityHotels_DAL.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -148,7 +148,7 @@
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\City.cs" />
     <Compile Include="Models\HotelDetail.cs" />
-    <Compile Include="Controllers\HotelDetailController.cs" />
+    <Compile Include="Controllers\CityHotels_Controller.cs" />
     <Compile Include="Models\MvcApplication1Context.cs" />
     <Compile Include="Models\NewHotelDb.cs" />
     <Compile Include="Models\Room.cs" />
@@ -157,7 +157,7 @@
     <Compile Include="Models\ui\HotelUI.cs" />
     <Compile Include="Models\WorldHotelDetail.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ViewModels\HotelList.cs" />
+    <Compile Include="ViewModels\CityHotels_VM.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
@@ -364,7 +364,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>60019</DevelopmentServerPort>
+          <DevelopmentServerPort>52269</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

@@ -1,5 +1,5 @@
 ﻿
-@model IEnumerable<MvcApplication1.ViewModels.HotelList>
+@model IEnumerable<MvcApplication1.ViewModels.CityHotels_VM>
 @{
     ViewBag.Title = "Hotel Search Results";
 }
@@ -26,8 +26,7 @@
         
                 Overall Rating     : @Html.DisplayFor(modelItem => item.HotelOverallRating)
             <br />
-            <br />
-                @Html.DisplayFor(modelItem => item.HotelDesc)
+
             <br /><br />
                         
                 
