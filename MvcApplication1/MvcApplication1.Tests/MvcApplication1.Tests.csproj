@@ -124,13 +124,14 @@
     <Compile Include="londoncsvparserTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controllers\HomeControllerTest.cs" />
-    <Compile Include="SearchHotelTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
     <Shadow Include="Test References\MvcApplication1.accessor" />
   </ItemGroup>
   <ItemGroup>
