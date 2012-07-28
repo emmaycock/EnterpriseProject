@@ -1,0 +1,71 @@
+@model IEnumerable<MvcApplication1.Models.SingleHotel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th></th>
+        <th>
+            HotelName
+        </th>
+        <th>
+            Street
+        </th>
+        <th>
+            City
+        </th>
+        <th>
+            State
+        </th>
+        <th>
+            Zip
+        </th>
+        <th>
+            Phone
+        </th>
+        <th>
+            hotelUrl
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+        <td>
+			@item.HotelName
+        </td>
+        <td>
+			@item.Street
+        </td>
+        <td>
+			@item.City
+        </td>
+        <td>
+			@item.State
+        </td>
+        <td>
+			@item.Zip
+        </td>
+        <td>
+			@item.Phone
+        </td>
+        <td>
+			@item.hotelUrl
+        </td>
+    </tr>
+}
+
+</table>
+
+

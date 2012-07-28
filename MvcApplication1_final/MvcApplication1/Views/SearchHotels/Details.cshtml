@@ -1,0 +1,26 @@
+@model MvcApplication1.Models.SearchHotel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>SearchHotel</legend>
+
+    <div class="display-label">hotelName</div>
+    <div class="display-field">@Model.hotelName</div>
+
+    <div class="display-label">city</div>
+    <div class="display-field">@Model.city</div>
+
+    <div class="display-label">review</div>
+    <div class="display-field">@Model.review</div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+

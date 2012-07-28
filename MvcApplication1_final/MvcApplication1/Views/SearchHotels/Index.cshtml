@@ -1,0 +1,57 @@
+@model IEnumerable<MvcApplication1.Models.SearchHotel>
+
+@{
+    ViewBag.Title = "Search Hotels";
+}
+
+<br />
+<br />
+
+
+
+<!-- <table> -->
+
+
+@using (Html.BeginForm("SearchHotels", "HotelDetail", FormMethod.Get ,new { id= "searchform" }))
+{
+   
+           <h3>Enter destination city below</h3><br />
+            
+            @Html.TextBox("SearchString")                
+            <br />
+            <br />
+            <input style = "background-color: #d3dce0;font-size: 1.2em; border: 1px solid #787878;  font-weight: 600;  padding: 7px;"  type="submit" value="Search Hotels" />
+        
+}
+
+
+
+
+<!--
+@foreach (var item in Model)
+{
+    <tr>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+        </td>
+        <td>
+			@item.hotelName
+        </td>
+        <td>
+			@item.city
+        </td>
+        <td>
+			@item.review
+        </td>
+    </tr>
+}
+
+-->
+
+<!--
+</table>
+-->
+
+
